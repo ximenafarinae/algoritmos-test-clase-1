@@ -1,4 +1,4 @@
-package com.redbee.academy.challenge;
+package com.redbee.academy.clase1;
 
 public class SumaRango {
 

@@ -1,4 +1,4 @@
-package com.redbee.academy.challenge;
+package com.redbee.academy.clase1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
