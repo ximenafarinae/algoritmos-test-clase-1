@@ -1,5 +1,7 @@
 package com.redbee.academy.clase1;
 
+import static java.lang.Character.toUpperCase;
+
 public class CamelCase {
 
 
@@ -18,7 +20,16 @@ public class CamelCase {
      * @return
      */
     public static Integer resolver(String texto) {
+        Integer aux=0;
         //TODO: implementar
-        return null;
+        for (int i = 0; i < texto.length(); i++) {
+          if(Character.valueOf(texto.charAt(i)).compareTo(Character.valueOf(toUpperCase(texto.charAt(i)))) == 0){
+              aux +=1;
+          }
+        }
+        return aux+1;
     }
+
+
+
 }
