@@ -19,4 +19,6 @@ public class TipoTriangulo {
         // TODO: implementar
         return null;
     }
+
+    
 }

@@ -11,8 +11,12 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcm(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        int a = Math.max(num1, num2);
+        int b = Math.min(num1, num2);
+
+        int res = (a / mcd(num1, num2)) * b;
+
+        return res;
     }
 
     /**
@@ -23,7 +27,15 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcd(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        int a = Math.max(num1, num2);
+        int b = Math.min(num1, num2);
+        int res = 0;
+        do {
+            res= b;
+            b = a % b;
+            a = res;
+        } while (b != 0);
+
+        return res;
     }
 }
