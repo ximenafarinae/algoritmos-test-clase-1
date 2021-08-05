@@ -21,9 +21,9 @@ public class CamelCase {
      */
     public static Integer resolver(String texto) {
         Integer aux = 0;
-        //TODO: implementar
+
         for (int i = 0; i < texto.length(); i++) {
-            if (Character.valueOf(texto.charAt(i)).compareTo(Character.valueOf(toUpperCase(texto.charAt(i)))) == 0) {
+            if (texto.charAt(i) == toUpperCase(texto.charAt(i))) {
                 aux += 1;
             }
         }
